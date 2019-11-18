@@ -1,5 +1,5 @@
 # Java-Assignments
-Java assignments for schools Programming II course.
+Java assignments for University's Programming II course.
 <br>
 
 # Description of Assignments:
