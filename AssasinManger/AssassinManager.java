@@ -1,9 +1,3 @@
-// Samuel Fields
-// 10/17/2019
-// CSE143
-// TA: Audrey Michelle
-// Assignment #3
-//
 // This class allows the user to manage a game of Assassin. It includes methods
 //  essential to the mechanisisms of the game.
 
