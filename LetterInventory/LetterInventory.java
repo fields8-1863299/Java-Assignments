@@ -1,9 +1,3 @@
-// Samuel Fields
-// 10/02/2019
-// CSE143
-// TA: Audrey Michelle
-// Assignment #1
-//
 //This class allows the user to construct a LetterInventory object. The letter inventory 
 // object stores an inventory of letters present in the passed string. It ignores the 
 // case of the letter and anything non-alphabetical.

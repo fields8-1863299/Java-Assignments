@@ -1,3 +1,9 @@
+// Samuel Fields
+// 10/30/2019
+// CSE143
+// TA: Audrey Michelle
+// Assignment #5
+//
 // This program allows the user to manipulate the grammar of a passed grammar
 //  list according the nonterminals and terminals included within. Furthermore,
 //  the phrases chosen from the nonterminals will be chosen at random with

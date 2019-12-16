@@ -1,9 +1,3 @@
-// Samuel Fields
-// 10/23/2019
-// CSE143
-// TA: Audrey Michelle
-// Assignment #4
-//
 // This class allows the user to manage a game of Hangman. It includes methods
 //  essential to the mechanisisms of the game.
 

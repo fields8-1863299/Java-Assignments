@@ -1,3 +1,9 @@
+// Samuel Fields
+// 10/09/2019
+// CSE143
+// TA: Audrey Michelle
+// Assignment #2
+//
 // This class allows the user to construct a GuitarString object. The GuitarString object 
 //  models a vibrating guitar string of a given frequency.
 

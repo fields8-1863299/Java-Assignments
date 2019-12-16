@@ -1,9 +1,3 @@
-// Samuel Fields
-// 03/07/2019
-// CSE143
-// TA: Arthur Liu
-// Assignment #7
-//
 // This program constructs a QuestionsGame to assist with the functions
 //  of a game of 20 questions; however, the game is not limited to 20 questions.
 //  This object keeps track of the questions and answers of the game which can
@@ -17,11 +11,11 @@ public class QuestionsGame {
    
    // Constructs a new QuestionsGame
    public QuestionsGame() {
-      overallRoot = new QuestionNode(null, "computer");
+      overallRoot = new QuestionNode("A:", "computer");
       console = new Scanner(System.in);
    }
 
-   // Reads in and replaces the current Q&A tree with a new file passed throught "input"
+   // Reads in and replaces the current Q&A's with a new file passed throught "input"
    // Assumes input file is in correct format
    public void read(Scanner input) {
       overallRoot = readHelper(input);
@@ -42,7 +36,7 @@ public class QuestionsGame {
       return curr;
    }
    
-   // Stores the current Q&A tree into a PrintStream output file.
+   // Stores the current Q&A's into a PrintStream output file.
    public void write(PrintStream output) {
       writeHelper(overallRoot, output);
    }
@@ -59,22 +53,22 @@ public class QuestionsGame {
    }
    
    // Plays one game of 20 questions with the user. If computer wins, prints 
-   //  out: "Computer wins! :P". Else, adds the users object to overall data
+   //  out: "Great, I got it right!". Else, adds the users object to overall data
    //  with a question to distinguish it.
    public void askQuestions() {
       overallRoot = askQuestionsHelper(overallRoot);
    }
    
    // Plays a single round of 20 questions. If the root QuestionNode passed is currently
-   //  on an answer, will print out "Computer wins! :P" if computer guessed user's 
+   //  on an answer, will print out "Great, I got it right!" if computer guessed user's 
    //  object correctly, if not will add the object and a distinguishing question
    //  to the programs overall database. If root is a question, will prompt a y/n
    //  question and continue on that decision. 
    private QuestionNode askQuestionsHelper(QuestionNode root) {
       if (root.type.equals("A:")) {//answer node
-         String prompt = "Would your object happen to be " + root.data;
+         String prompt = "Would your object happen to be " + root.data + "?";
          if (yesTo(prompt)) { //correct guess
-            System.out.println("Computer wins! :P");
+            System.out.println("Great, I got it right!");
          } else { //incorrect
             System.out.print("What is the name of your object? ");
             String answerData = console.nextLine();
@@ -108,8 +102,8 @@ public class QuestionsGame {
       return root;
    }
 
-    // post: asks the user a question, forcing an answer of "y" or "n";
-    //       returns true if the answer was yes, returns false otherwise
+    // asks the user a question, forcing an answer of "y" or "n";
+    //   returns true if the answer was yes, returns false otherwise
    public boolean yesTo(String prompt) {
       System.out.print(prompt + " (y/n)? ");
       String response = console.nextLine().trim().toLowerCase();

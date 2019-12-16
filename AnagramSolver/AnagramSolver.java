@@ -1,9 +1,3 @@
-// Samuel Fields
-// 11/14/2019
-// CSE143
-// TA: Audrey Michelle
-// Assignment #6
-//
 // This program constructs an AnagramSolver object which can be used to find
 //  every combination of words in a given dictionary which contain the same letters
 //  as a passed phrase.

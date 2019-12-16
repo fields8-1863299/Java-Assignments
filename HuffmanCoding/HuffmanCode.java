@@ -1,9 +1,3 @@
-// Samuel Fields
-// 03/16/2019
-// CSE143
-// TA: Arthur Liu
-// Assignment #8
-//
 // This class helps create the Huffman code for a specific message by using the 
 //  Huffman algorithm.
 
