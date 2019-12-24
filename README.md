@@ -1,5 +1,5 @@
 # Java-Assignments
-Java assignments for University's Programming II course.
+Java assignments for University's Programming II course. Practice in data objects, interfaces, classes, data manipulation, recursion, recursive backtracking, binary trees, and binary tree traversals.
 <br>
 
 # Description of Assignments:
